@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    margin-left: 20px;
+}
+
+.d-flex button {
+    margin-left: 10px;
+}
+
+.trangchu {
+    display: flex;
+}
+
+.img img {
+    transition: all 0.2s linear;
+    margin-left: 200px;
+    width: 510px;
+    height: 600px;
+}
+
+.gioithieu {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.button {
+    font-size: 20px;
+    color: rgba(102, 102, 102, 0.7);
+}
+
+.button a:hover {
+    color: rgba(15, 15, 15, 0.7);
+}
+
+.button a {
+    text-decoration: none;
+    border: none;
+    color: rgba(102, 102, 102, 0.7);
+}
+
+.name {
+    font-size: 30px;
+    color: rgb(213, 17, 17);
+    margin-top: 30px;
+}
+
+.gachchan {
+    height: 3px;
+    display: block;
+    background-color: black;
+    margin: 1em 0 1em;
+    width: 100%;
+    max-width: 400px;
+}
+
+.p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 2px;
+}
+
+.but {
+    display: flex;
+}
+
+.but a {
+    margin-right: 20px;
+}
+
+.them {
+    margin-top: 50px;
+    border: 1px dotted #49231a;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
+}

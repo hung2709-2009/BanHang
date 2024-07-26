@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href=".//style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<body class="Mac">
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid bg-white">
+            <a class="navbar-brand" href="#"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoXQPgZuJG8xlTU5GbLfcIcSD9rXNjSj8jQ&usqp=CAU    "
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class='bx bxs-home'></i>Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class='bx bxs-user-circle'></i>
+                            Tài khoản
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/register/register.html"><i
+                                        class='bx bxs-user-detail'></i>Đăng kí</a></li>
+                            <li><a class="dropdown-item" href="/login/index.html"><i
+                                        class='bx bx-log-in'></i>Đăng nhập</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class='bx bx-log-out'></i> Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Phân loại
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#gioithieu">Giới thiệu</a></li>
+                            <li><a class="dropdown-item" href="#sanpham">Sản phẩm</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#thongtinkhac">Thông tin khác</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class='bx bx-search'></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="trangchu">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1500">
+                    <img src="https://file.hstatic.net/1000381168/file/slide_1_e76e66a81b3d42b4bfb5b4f618fdbcf4_master.png"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://cdn.pnj.io/images/promo/149/CAT-Nhan.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="https://media.istockphoto.com/id/489814272/vi/anh/v%C3%A0ng-nh%E1%BA%ABn-b%E1%BA%A1c-v%C3%A0-d%C3%A2y-x%C3%ADch.jpg?s=2048x2048&w=is&k=20&c=ui2g74Jz73zKB-yVcR6SCk9pGxrU1bFRWILa5nRAGJg="
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div id="gioithieu" class="gioithieu">
+        <h1>Các mẫu kim cương hiện tại</h1>
+    </div>
+
+    <div class="container-xl">
+        <div class="row row-cols-4">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://igg.vn/images/upload/34201813229polished-diamond.png  " class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kim cương không màu</h5>
+                        <div class="div-text">
+                            <p class="card-text">Kim cương không màu là một loại kim cương khá phổ biến trong các loại
+                                kim cương, nó cũng có giá thành rẻ nhất trong tất cả các loại kim cương</p>
+                        </div>
+                        Giá thành: 15.000$/carat
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vM8Xm4I8tQQmGXtLuT6yE-Sc85WeWpng8A&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kim cương đỏ</h5>
+                        <div class="div-text">
+                            <p class="card-text">Kim cương đỏ hình thành do quá trình “ biến dạng dẻo” làm thay đổi vĩnh
+                                viễn cấu trúc phân tử trong mỗi viên kim cương. Đặc biệt là độ cứng của nó.</p>
+                        </div>
+                        Giá thành: 250.000$/carat
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpLB2wTgQCXYCS3Zo7ekvaDvM1ZI2Ot4Y0w&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kim cương vàng</h5>
+                        <div class="div-text">
+                            <p class="card-text">Kim cương vàng còn gọi là kim cương Hoàng Yến, là loại kim cương có các
+                                nguyên tử nitơ trong mạng tinh thể, nó cho phép các viên đá hấp thu ánh sáng màu xanh
+                                lam và cho ra màu vàng đẹp mắt</p>
+                        </div>
+                        Giá thành: 20.000$/carat
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="data:image/jpeg;base64,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 "
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kim cương xanh lá</h5>
+                        <div class="div-text">
+                            <p class="card-text">Kim cương xanh lá được hình thành ở những mỏ cacbon chứa chất phóng xạ
+                                cao như uranium trong suốt hàng triệu năm. Nguồn bức xạ có thể làm dịch chuyển cấu trúc
+                                cacbon của viên kim cương</p>
+                        </div>
+                        Giá thành: 75.000$/carat
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xl">
+        <div class="anhsanpham">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1500">
+                        <img src="https://cdn.pnj.io/images/promo/146/kvv2_1200x450_ts_v%E1%BB%8F.jpg"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbPBkqhv8r6-p3L40sEy6ldLiGCfRMFBCIiA&usqp=CAU"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_DLLS6zB1RxaklnvrHRPlWzpiJ9TyUWGez390PEK9D8XKKjcSmd809uU4I8XF6efKJc&usqp=CAU"
+                            class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="sanpham">
+
+            <div class="card" style="width: 18rem;" id="sanpham">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjg9rkflxWoyW5ECEi4y9ElRnGQ_ZlNrETfA&usqp=CAU"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Nhẫn kim cương không màu</h5>
+                    <p class="card-text">Loại trang sức thông dụng và quý phái nhất, đẹp và hợp với túi tiền của bạn.
+                    </p>
+                    <p class="card-text">Số lượng hiện có: 60 chiếc</p>
+                    <a href="/sanpham/NKCKM.html" class="btn btn-primary"><i class='bx bxs-cart'></i> 4.500.000 đ</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZml9B3i4E0Vi95JIuB0G4jUUSKsgYIXp3zQ&usqp=CAU"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Nhẫn kim cương đỏ hoàng gia</h5>
+                    <p class="card-text">Giá thành của nó như cái tên của nó vậy, chiếc nhẫn này chỉ dành cho những
+                        người giàu có.</p>
+                    <p class="card-text">Số lượng hiện có: 11 chiếc</p>
+                    <a href="#" class="btn btn-primary"><i class='bx bxs-cart'></i> 12.720.000 đ</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUiCSdA1E0NKxIrTH0cAq2yAuGDpI81-lNew&usqp=CAU"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Nhẫn kim cương xanh lá uranium</h5>
+                    <p class="card-text">Chiếc nhẫn được đính một viên kim cương xanh lá hình thành từ cacbon và phóng
+                        xạ uranium.</p>
+                    <p class="card-text">Số lượng hiện có: 26 chiếc</p>
+                    <a href="#" class="btn btn-primary"><i class='bx bxs-cart'></i> 7.900.000 đ</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ICW6ulldmwjgWLlS_PtYm4BTVA46DsVH7w&usqp=CAU7AbjNa7g9v10mq2VVb4yd7HsxaIkNn3n3FDxBOKwiQ4Mjnu4J/Ea2z7k0fumiEpHlXBzmicBYzVwXI6ibjJiHczHJCnXSntua3P3jWnCVOZ8RkVBiQ0P4xW1EuOD7yxikNK5ziTvMkUXJ9I2cd+ajXTDub/NTlx/bslXX51HMTIilgZB+VOdjsLc5kLPup8qR61x1GV2my3XeXzUNl8qz2Urb51OplyggkrUQR0SMil+4RIdtJAVnHao5F7VGSdLowOxNc86VS2cSz3WjixeIKm9UmalpzHvtpUElJ7+dcdvedeuynGXHJDKclKlE9POkKZMkKle1OIzzDkZT5UxcF3lyFzdSUlJO2R2qwaX2/kDI37u55+0DhF+Tdm7lEb+7lI+90DZKx/cY+hpRf4YlRx94lQ9at9XETUyI4y2kgkEoBOcKHSka631MxIHQ961U3MVwYhRYkPW1TZxmuVxlSKYX3Er32qLlEHwrSrmVkSNNYrKuprFXRJK89trvWtVxKf8AbH1qPzR2pNgjbp0OzX3DusgeArWhCnCSlKlY643xWqpawJCpCgoZGKY4AkdyXskabISY8dZbS4n71VMtt4JZKtchY5WclSvCuiytNoOUpAOa5uK5sltnQh5SU46CsgyW4lvU7LzdoHDsctQkhxzTjX1xVb3C7yJ0hTrrit65JDzrijrcUrfua1JGVDNaEQL3Ky07Y8dMpYSjWpRqXcs8aFF5kgnmY71O8CxGFNKcU0krx1NRPGrq+aoats9BQeTiHiLTnJ1kgqx6V4HJPdXzFa9RxjNeaeLJ+wxY7klKnSdIqz4l0gQYQSHQNvCquthKUjScV2vuuFOCs4qpkye44Mlb/dI0hThS4fLzqLZitusB3UvJ6DAqOeUfGssyHhhIWQB4VBQgQzJNSpkxIiqGQghWtQAI26Z+dSVljAIWOZunY5T1qG5zqBhKyPSsxlrGVhRzVJHGIwMaIElLDigWwVD4TnpShxOFRrq44nGh/KwEnYHvUw3LfcI1r6eAAqN4vSnlR1BCAok5UEAE7dz3paEAsMlj8ZBGYTXO46VGtdFbgoEqzCiiipkT/9k="
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Nhẫn kim cương vàng ánh kim</h5>
+                    <p class="card-text">Nó được làm từ vàng nguyên chất đính theo một viên kim cương vàng ánh kim.</p>
+                    <p class="card-text">Số lượng hiện có: 34 chiếc</p>
+                    <a href="#" class="btn btn-primary"><i class='bx bxs-cart'></i> 5.400.000 đ</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="cach"> </h1>
+        <div class="sanpham">
+            <div class="card" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Hoa tai peridot</h5>
+                    <p class="card-text">Nó được làm theo phong cách như một bông hoa nhưng đính thêm peridot trắng.
+                    </p>
+                    <p class="card-text">Số lượng hiện có: 71 chiếc</p>
+                    <a href="#" class="btn btn-primary"><i class='bx bxs-cart'></i> 1.200.000</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Vòng cổ Đá đỏ</h5>
+                    <p class="card-text">Một thứ trang sức toát lên vẻ hết sức đẹp quý phái qua viên đá đỏ qua hàng
+                        triệu năm
+                        hình thành.</p>
+                    <p class="card-text">Số lượng hiện có: 16 chiếc</p>
+                    <a href="#" class="btn btn-primary"><i class='bx bxs-cart'></i> 5.800.000 đ</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe6bCsADh2sAtUo63V_FMuv-vCnanLeEmplg&usqp=CAU   "
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Vòng tay lục bảo</h5>
+                    <p class="card-text">Được hình thành từ các phân tử berili, nhôm, silic và oxy liên kết
+                        tạo thành tinh thể lục giác Beryl.
+                    </p>
+                    <p class="card-text">Số lượng hiện có: 29 chiếc</p>
+                    <a href="#" class="btn btn-primary"><i class='bx bxs-cart'></i> 8.650.000 đ</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQEhUQEBAVFRITFRMVFxYVEBUWEBUQGRgWFxUVFxMYHCggGBoxHRcWITIiJSorLi4uGB8zOD8tNygtLisBCgoKDg0OGxAQGy8mICYtLy4xLy4tMi0yLS0tLS8vLS8vMDArLS0tLy8tLS0vLSsrLS0tLS0tLy8tLTUtLS8tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUDBAYCB//EAEAQAAICAQMCBAQEAQoEBwEAAAECABEDEiExBEEFIlFhEzJxgQZCkaGxFBUjUnKCksHR4TNic7JUg5OiwtLwU//EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EADARAAIBAwIDBwMEAwEAAAAAAAABAgMRIRIxQVHwEyJhcYGR0QSh4TKxwfEUI1JC/9oADAMBAAIRAxEAPwD7ZERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBEmIBESZEAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAERJgERJiAQTKrqPGkBKpRK1dkAC+OTx2v1+hr1451RxhaIo3e9EHygH9z+s5/xHJo1bF/KotmKjc+pql3Gx9plVmqcdbdkt+url4R1PSt2XSeM6d8wCqQSDuDQ2Jo877dux7y2w5lcWpvg/Y7icZTlk6fKqhTbFnANbN8w4+Yr6jeu4lh0mcqcbo5K5GUVrS9OrTxXHPHFGRSqqpdx2WPG/wAbWJnDTZPc6eRJibGZESZEAREQBERAEREAREQBERAEREAREQBERAEREAmeMuQKCzGgJ7nPdb1XxshQGseNiCTxa/Ox9huPqD7TKtU0LxeEXhHUzP1HjYG4U6fWwNvWjf8AATKfEWVfi0WxgWw01lVf6+2zr9K+8qsXV4m+I+QlMOEWSPmJ9z3PHHc1231fw/4mhydQ4Vl6fHiLDUx+X008Xt+1b8zjhXqOSzvt824r2N3SjZ426t5lr1vU/FcHGdSslKtbMfmumr6e9yqzvT25DIikabDKCKHyb1seD7dzNbwTNmcF8uOgG0pqf8m53A5JXej6H2ll1AtQDvsw82psRdwTubCkjzenbia0pdvBSUbO6efP34em5SS7OTTeMmLxTCqqGGRdR1ealJAtbqq2rn6z2rnSzFvIpYOwY8AncEc+4qjv23mDpukYur5HLFBWrUwJYdgRvX07ie+wAGrWwBQ7tbVySNXJHNkWbrkVpS1p1ZQw7JLF8X4ebsuNks8plHTaCllF2/i9sMWFQ+XSGYFtK4wf6xF7+3seJonxzLqKqMTlasAMDvx5tRr9Jo+E+IM6dRrQhwK3Oktj0mm1LvXzb8zW8N8SRAAobUocsrENjA5I1ElgaHLWCD9pl/lTmk1i936fNsviuRfsVG9+vwdV4Z4oue1opkXco3NeoP5h7+44uWM5vqVsJnxbdwa3VxYK1/iFfUS/6bNrUN68j0I2I/UGdtGprw/7RzzjYyRJkTYoIiIAiIgCIiAIiIAiIgCIiAIiIAiIgGPqsmlC3oJynhOQ6QKtmC2QQDfzMQSRfm0mdX1C2poWeQPUjcD9p8v8Q8QbBab307tQZLtdR+EUI3FhrJv271OL6mcadSM5rGevsdFKLlFpeBddeijEUcMy5C2JgrHU41E6lvhtQDg8bn1Ey4FL4VxKmjCPMQ5vLkUE7sqi6v27fQjbx9CgVM5dndkXIGCMQLFrS2T9hzMfV1g1knU98OxJvfuRY2b6+b04zdF6nKfdhyvsvPk3bF1Yt2mLRzL+fwi26fNi+Gcbgqb3JF+elOrb6ivpUpwCzPiZiSbb1xMPtzfp6DtvMnV5UygadQx0B5LUKFUkh24UWKJv0+2PG3xS2jqNJU6q13s2wJUnjvYo8+03lrxOn+lW2e648ljg739HnNW2lv8AtyPeUjUSEYDTe2M224IbUe4A27/pvtdBkTUepyNVLaqASVuwW0iz3obb2e1TTydOukAZABQFKhYs9bBS+7IaPr27Hf0fP8MqaYMCQSqmiB8yIKJ+UVfBErecpf6l3cclm/vjD5MWil3nn+PyOrUhxmwEBVJoMGGpWItSCONRFem807xHKVpgzgqysFCqlgkLtvdbbmptZOqVaGpfiE027C732WiDy3a9h6TwnhepSXfTTWCPK3C21gAirIoH1PeZVaCk7UXdbvZ2zwzhtXty8DSFRpd/r5SNrDSpkY8HU11Q51ar7/5BpaeBZLDL/Zb9bX/4D9ZzHXs2JqTSUxsmvKoIf4bqGsC6Jrf9eBL/APC+UZVOVb0MqBSQQTRc3R9Qyn7zSnUhKtaCtZO/vn258fQpKLULsvZEmRO0wEREAREQBERAEREAREQBERAEREASYnl2oE+gJgFN4v4ppJRVZqHmCNpPf8wIPbgb7So8b8FZ8ZzjUmUIGKFyQUXkAg6gwviyN/eePCOoD5MmQ0w1MR3tV8vH2Jr3lZ0njz5M+XJe3w8iLjB8pY0qqu+3nrt/GeTOspq8uLsvC3HryO2EHF44ZZa9F0eTFhwpla9ACfMLonypfc0wH2mz4N0f8oyPky7hDWmgCXO9sRyaobTHj6hmUMSDjfGpZlUnKGI1gM22w329a972/wAM59AyrkGiih3BF2NJb7spP97kzslocoJN6c+T5f1t4GCulJtZ665+Jk8dwY1ACgK2lqpgi7EEal4b72OZU9LlDuRjexjKrYohl00FIqhvvtxXNGpY+O5Ey6LQbG1Zsug6WBrYcglQKNbbjcVNHD07hVGNaByHWQCaQEFF34sKBudtV773p/t7XTZabevl19ivc034mfKqqLN6bF0xBIsAbjcG64mq+bUSpZFcMzDdTQBpRvubXzexNX3G1mzOBthbZlWyLUk8+VTZFDn/AJh71p9R0KfH8ytvXmRhWw0sttzt5rF8N3k1nUil2aT8/Lf0sRDQ76mdD1ng6ZMOlQA+jZgPz1sSByLnP9N1rZE00y09MR8hPDAmjzuO3InS9B1+PSq/IFUABzQobUGPJ2nMeHdWDqTTpQNsT+ZmJb5TVjgc79plO0asbO2q97cbZX85+5eN3B8bGP8AmnNlzsPjKMBVi5OMnICO2rV71VHj2m9/OeTpG0aS2MFbV0CvRAoqygKNuxv0540XdsGA4sB0FETGCAvlUcDSAFv7AccATYx9Z8bEhe2ZUpy53Y0CSwIoG99hW85JSjCUlTed/Brive/jz2NknJLWsdW+x2OHKHUOptWAIPqDxPcovwdlvAUvbHkdV/6ZOpf2MvJ6UJaoqXM5JKzsIiJcgREQBERAEREAREQBERAEmREA1+u6tcS6mNWaH9o8fac7j6jKyHNkY6u6pkahj1EC1+VjQF0PzHit9r8S9QwIGNQ7IrOFIB/pDtj5H9rb/acl1nVdVjwqmd1R8jHzf8PKMeolk3bRv9dpy160afeknZL0vj5dvU2p03JWTR48I6gdJlyB2IGM5QKGrvaeXvtQ5HPIm50+BMr/AMoZFxanNhMe7jj4hrdhvxsdz3mr1eIY82PLeoM2MP5lr4i6bthtulGxtYb0nQP1+IqyEgFSNJOgAUQSQeb29PzXZqxw/TU1VTjN2Szbj++yOmtNxs4rLwZmRUK6HbJjAUsVazp/MNhtvR7n6bSt8T6j4fntjsCTp2VQxKqQR8tG9uBuZteH9CcnxSVf4ZBZApCgk8+U8N3AM8ZW5VjZVvOpalK7i2aiS16W0gAb++/YlKvQz3eXpx64exz3VOpjP5Mj61GRT5WO95CdQQaSQMm93R+Xb95jyBVyJkz4AV+FasEZso1bOSbobBbFA7d5aeDdaMi/yfMLIsLe2pRwPUGgCPUUeQZZeJuqIB8MNvQBFgbHead+olJStx2/f8WK92OGuvDplFm63EoI06iSVVQvzKRVb0APXf8AWV/S/wBCoT4apgsnGio5T4SUACG3u7PYHatpZYMuHFkGpEptrOkkURVCySd+fT02nQdYmID4uULWME6mGyiHGs3qbStw4eN7+BF4bJM4rNnKm8bOEZj8hoECidA23rYCwPWZ8bM2Hy3jq7BsONRBB78CxxyO3MydV1bZ3d2QixpwobB4YBmBAsXZ2OxG/aPCOkyZGZMhYoqE7BVIYtYFA9xp9qA4NytNSlKVVO/C2233V/j0tOyShbxPfV4gqKWyAF+FIo6OF1fod7795XrmGX+hxrp02jUqqBR8w25Nk7+5m506EHzbkMXNEanO4U3sDsSKO177TN0zImtlQh3obkfMaAFA0DxOaqtdPtE7XvdembPn/fDOsHplpfA8eDI/TppR/Nlb4mmgTbE+vC7H7CXXgnixz2HXSa1L6sl1ZHY/6yl8S6lhmCrj1BUAx0dNkfNbkFSl3fpNf8NdbkDrrxaXbIcfBCaeQFbg7Em9725sVrSqwTUVfF097deXDPlnODabdvc7mRJkTuMBERAEREAREQBERAEREASZEmAc54/i05AxB0ZBTEGioUNbBr22I49/tzH4m6xUHww5DELpB1FdPlWro+/pzO+8V6b4mMjaxuuo0uqiACaO2/pOI6/wxsqBBSgNoyOb/MaYrt5uTd8zj+qjNwlGHHw38F8va6vjK3ouKkm+BdY/w8r9Mn58pUFyTRy9wL/KR+X03HBMrPD2wYesD5FKoqfCWxsrnTYyhtw2xI9m2scWfgLZOmxMhdcoDWg3Bogk9tgSOD31b8CeMzDOQ2bGC29NpFrjs2jmha8GiD9+ZXsMQlBWfJ7YxnjfPzzLdpbUnt8nVqbFjcdq4r2lR4v4fqIzKWDKN1DBVINgtf8AWAN37etSh6I/C8gLLos1ryqL4Pk1bD23Fmbjl6RjqUu1HfVuBdhd78xF7Vt951u8k9S28eWTDZ4fTNXGzsCCLJtqDadDCyjKQCefX+sCAKqR1Xi7kYnddRYhAoNNZOkkqTStZqx7/QZ8DFgcZ8oawQdKDceet9+L3Hc+gmugZlvzUrPerUE1iitBSdiTXPZfTfKtCpO0oy07ePG+79v4wXhKKumr7mXxI5UxJ8XGxClVZi6aSSRpNBjQsD195gydXlyPiwupfELOz+X2Z35JGoD02Jv0y4sjMqOVID1p811sPMTpHnB1V67dyK8gEMWG+QqhYuzAi6JTcGzSkgbE16HaJ0ZuqnrxjHk/TmvS5MZxUNumR0YZ8ioSC2ReyrrQagS3INbjfbjjah2HS9OMahBwJxOPMT/SK1bhtSUSWFWDo3uyRQPCmXWbK64FyplcEqraWYU915Q1WNzW3oeNiNr3bbWVj+ermVrJI9fi3PgXCceWviOCMYC3k1H8wrcD3/zmj4T4YpKBQ2oIoyGzoxGhqAvcP2C2So3O/Or0mJcrZMjf8S1u2fWR6DzEqCBezbXLLF4oVQ4saDGfMqf0ZC424N0TZv6bg+9czp66mqS398Zz+3522UrR0p/BUZtOPq2wgKFWtLmiwxkGwByW1kbm+PWWOEgZMYZixOQHSKsEMNNL2FAEjatyfSczh6DJqLuQ7FX8oy+YBT5dW96bvjmz9un/AAx4e+pMjKQqK2n0JJIAN72Aa+3tM/pNdmmrJvk7rjng0turFq2ng749OXXM6uRJkT0DmEREAREQBERAEREAREQCZr9d1Hw0LVZ2A+pNXM8rvHR/RhtvI2rc0Nlb/WQ3ZXJSyVH8pZ2uy6mrYatgNRJ03SkWOKPEhRpxlm3BsklvKvamvv8AMeCD3kJm8zLjPkIpgWGpSb4ob73vMOZGC6EAr1yElR76eWPtY+s5u1/5XPPr9/Hka6OfgbGMoynhbP8AxFJ+IUAO1aL7Db3M0mc42XL8QYhdlSy7rR5LVve/1A9Lm90Xg65xeXqna+UxscVe3lp69iTLTpPw70uI2nT49R5YqC5+rHcyy7WVmrde5XuLBznxEzh8YdCrg7K4ZiCKtiQTffmedWUUqrnOmvlwMTsK2fUBfO/M7ZMYHAA+gAnuOxeby33J7RcuvY4deiya9a9LmuiBegEKasXqsixdGev5uzkAHpX2+U68VqNrCjgDb9520SP8ZWs5Pr0Ha+COS6jwvIAmnA76SSADjFX81liOfaYek6TJhBCdJlCknygYmUXd7avc/qZ2cSzod7Vqd/MhVMWsjgsvTuoIPTZh5i1nAzAEm+Eb17zM7DIAWVsarvZUoNXroda9STO3kGFRabtJ53/sOonwOB6d1YXjzj4hLedMiONBOy1Q2+x+5NzZ6fGgvGyUdz850udV1RABIPmrfcD3nU9Z4XgyC8uHG3uyL/GpRdf0nSYlZkysgUcYyWxgeyHyftKtTppZVl6X8ye7J7GjkzFCURNjZZhjbVdDUAaC0afj144thyNhHzt8fUy8BQUo018Hc1xttYmXEpU3sbABYeXKB2JI+Ybniq956cBQdr1ahZqgCDdg7G/fnvYlVUWNS4vpfL9WTp5F94H1/wAbGLJZlC6mqlJNkVW11zLOUn4bVlV1Pyj4elr3by0Tp7DYV9/SXc6IO8TKW5EREuQIiIAiIgCIiAIiIAhhexFxEAr+t8NUgtjUBu9bavr7yg6tW7A2t2p2JH37zsJjy4Vb5lB+omNSipLGC8ZtHHBbGqjV+nB9/SWvRdW3Gpv8RP7Hab+fwbE3Yj6G/wCM0G/Ddb48zL9Cf4NY/acq+nqw/Tn1t17mvaQluWeNsh4cf3kv+BEyF3H9Q/Yj/MysTpOsQUubE/8Aaxm/uQR/CRlydd2xYD/5jD9ptrqJbP7Mrpi3uixbqWHKr/jP/wBZ5PiFfk/93+0q3ydb/wCHw/8Aqt/pNbIvWk7YMVf9Qn95lOrW/wDKft+C6hT4te5dfzieyfv/ALR/L29F/cyk09b/APwxj++T/pMqY+r74l+zV/G5RVPqXwfsS40ua9y1/ljnuB9F/wBTIZ25Lk/ov/bRmjh6bqT8ygelZUoD38m/7TKfDMz7NkCj/lZr/aWSrve/7EPs+FjR63rXOoBRtdE8k7dz/wDtpU5ukd1a3NnYDhfuBzOkx/hvHy7Fj77/APdc3sXhWJfy39T/AJcR/izl+odtGOxzfT4GLXuzVQAF0O/8BL3ovChV5RZ7Lew+td5ZogXZQAPYVPU6YUIxWcmUqjZjxYVQUqgfSZIkTczEREAREQBERAEREAREQBESYAnktFyCIBOqeN/WeqkgSCSAn1/WeWxzJUVFiDCU9pGmZ6iRpJuYQskCZaio0i54VZJWeqipNiDxZkhpJWeSsjJJ61T1PIESxBMQDEAREQBERAEREAREQBERAEGIgERUmTAPMXPUiALi4iALiIqAIuIgC4uIgC5EmIBET1IgAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQD//2Q=="
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Vương miện vàng</h5>
+                    <p class="card-text">Được làm bằng vàng nguyên chất và đính 51 viên đá quý trắng,
+                        đây là loại hàng độc nhất.</p>
+                    <p class="card-text">Số lượng hiện có: 2 chiếc</p>
+                    <a href="#" class="btn btn-primary"><i class='bx bxs-cart'></i> 42.200.000 đ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="lines"></h1>
+    <div class="three">
+        <div class="container-xl">
+            <div class="two" id="thongtinkhac">
+                <ul class="con">
+                    <h10>SẨN PHẨM</h10>
+                    <li>Xuất khẩu</li>
+                    <li>Mặt hàng</li>
+                    <li>Kiểm định</li>
+                    <li>Thời hạn</li>
+                    <li>Giới thiệu</li>
+                </ul>
+                <ul class="con">
+                    <h10>DỊCH VỤ KHÁCH HÀNG</h10>
+                    <li>Hướng dẫn đo size trang sức</li>
+                    <li>Mua hàng trả góp</li>
+                    <li>Hướng dẫn mua hàng và thanh toán</li>
+                    <li>Cẩm nang sử dụng trang sức</li>
+                    <li>Câu hỏi thường gặp</li>
+                </ul>
+                <ul class="con">
+                    <h10>CHÍNH SÁCH</h10>
+                    <li>Chính sách hoàn tiền</li>
+                    <li>Chính sách giao hàng</li>
+                    <li>Chính sách bảo hành thu đổi</li>
+                    <li>Chính sách khách hàng thân thiết</li>
+                    <li>Chính sách bảo mật thông tin khách hàng</li>
+                    <li>Chính sách xử lý dữ liệu cá nhân</li>
+                </ul>
+                <ul class="con">
+                    <h10>KẾT NỐI VỚI CHÚNG TÔI</h10>
+                    <li class="Facebook"><i class='bx bxl-facebook-circle'></i> FACEBOOK</li>
+                    <li class="instagram"><i class='bx bxl-instagram'></i>INSTAGRAM</li>
+                    <li class="youtube"><i class='bx bxl-youtube'></i>YOUTUBE</li>
+                    <li class="gmail"><i class='bx bxl-gmail'></i>GMAIL</li>
+                    <li>Nhận các thông tin khuyến mãi hấp dẫn</li>
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </script>
+
+    <script type="module">
+        import {} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+
+        import { collection, doc, setDoc, getDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js"
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = { 
+            apiKey: "AIzaSyDZtzOK9FrBHbk_WuNwxTpyHLp1y-6sgNo",
+            authDomain: "jsi-02-c20a3.firebaseapp.com",
+            projectId: "jsi-02-c20a3",
+            storageBucket: "jsi-02-c20a3.appspot.com",
+            messagingSenderId: "1007483578581",
+            appId: "1:1007483578581:web:7f487b20f5056f91fe5a5c",
+            measurementId: "G-MKFCW733WZ"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+
+
+        // get users
+        const db = getFirestore(app);
+        const docRef = doc(db, "users", "ewu5BDaHyRK9Id2ptQfJ");
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+            console.log("Document data:", docSnap.data());
+        } else {
+            // docSnap.data() will be undefined in this case
+            console.log("No such document!");
+        }
+        const products = collection(db, "products");
+        const querySnapshot = await getDocs(products); querySnapshot.forEach((doc) => { let product = doc.data(); document.getElementById("products").innerHTML += `<li><div>Name: ${product.name}</div><div>Price: ${product.price}</div></li>`; });
+        
+    </script>
+
+
+</body>
+
+</html>

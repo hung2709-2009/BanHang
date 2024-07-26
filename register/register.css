@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 100px;
+}
+
+.login {
+    display: flex;
+    margin: auto;
+    margin-left: 100px;
+}
+
+.login_img img {
+    margin-left: 300px;
+    width: 500px;
+    height: 355px;
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Ro man', serif
+}
+
+.select1 {
+    margin: 5%;
+    display: flex;
+}
+
+.from {
+    margin: 5%;
+}
+
+.from-select {
+    margin-top: 20px;
+}
