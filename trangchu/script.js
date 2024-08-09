@@ -44,8 +44,24 @@ if (docSnap.exists()) {
 const products = collection(db, "products");
 const querySnapshot2 = await getDocs(collection(db, "products"));
 querySnapshot2.forEach((doc) => {
-  console.log(`${doc.id} => ${doc.data()}`);
+  // console.log(`${doc.id} => ${doc.data()}`);
+  let product = doc.data();
+  console.log(product);
+  document.getElementById(
+    "products"
+  ).innerHTML += `<li><div class="card" style="width: 18rem;" id="sanpham">
+                <img src="${product.image}"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p class="card-text">${product.desc}
+                    </p>
+                    <p class="card-text">Số lượng hiện có: 60 chiếc</p>
+                    <a href="/sanpham/NKCKM.html" class="btn btn-primary"><i class='bx bxs-cart'></i> ${product.cost}</a>
+                </div>
+            </div></li>`;
 });
+
 // const querySnapshot = await getDocs(products);
 // querySnapshot.forEach((doc) => {
 //   let product = doc.data();
