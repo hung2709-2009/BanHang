@@ -1,16 +1,22 @@
-import {} from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
 
 import {
   collection,
   doc,
-  setDoc,
   getDoc,
   getDocs,
 } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+  updateProfile,
+  signInWithEmailAndPassword,
+  signOut,
+} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -28,12 +34,68 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 // get users
 const db = getFirestore(app);
 const docRef = doc(db, "users", "ewu5BDaHyRK9Id2ptQfJ");
 const docSnap = await getDoc(docRef);
+
+const auth = getAuth(app);
+
+const email = document.getElementById("exampleInputEmail1");
+const password = document.getElementById("exampleInputPassword1");
+const username = document.getElementById("exampleInputName");
+
+const btnRegister = document.getElementById("btn-reg");
+console.log(email);
+
+if (btnRegister) {
+  btnRegister.addEventListener("click", () => {
+    createUserWithEmailAndPassword(auth, email.value, password.value)
+      .then(async (userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+        await sendEmailVerification(user);
+        await updateProfile(auth.currentUser, {
+          displayName: username.value,
+        });
+        await signOut(auth);
+        alert("Please verify your email");
+        location.href = "./login.html";
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+        alert(errorCode);
+      });
+  });
+}
+
+const loginEmail = document.getElementById("exampleLoginEmail");
+const loginPassword = document.getElementById("exampleInputPassword1");
+
+const btnLogin = document.getElementById("btnLogin");
+if (btnLogin) {
+  btnLogin.addEventListener("click", function () {
+    signInWithEmailAndPassword(auth, loginEmail.value, loginPassword.value)
+      .then(async (userCredential) => {
+        location.href = "/trangchu/index.html";
+
+        const user = userCredential.user;
+        if (!user.emailVerified) {
+          signOut(auth);
+          throw { code: "Email not verified", message: "" };
+        }
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+        alert(errorCode);
+      });
+  });
+}
 
 if (docSnap.exists()) {
   console.log("Document data:", docSnap.data());
@@ -41,7 +103,6 @@ if (docSnap.exists()) {
   // docSnap.data() will be undefined in this case
   console.log("No such document!");
 }
-const products = collection(db, "products");
 const querySnapshot2 = await getDocs(collection(db, "products"));
 querySnapshot2.forEach((doc) => {
   // console.log(`${doc.id} => ${doc.data()}`);
@@ -49,24 +110,15 @@ querySnapshot2.forEach((doc) => {
   console.log(product);
   document.getElementById(
     "products"
-  ).innerHTML += `<li><div class="card" style="width: 18rem;" id="sanpham">
+  ).innerHTML += `<li><div class="card" style="width: 15.7rem; height: 30rem" id="sanpham">
                 <img src="${product.image}"
                     class="card-img-top" alt="">
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.desc}
                     </p>
-                    <p class="card-text">Số lượng hiện có: 60 chiếc</p>
+                    <p class="card-text">Số lượng hiện có: 50 chiếc</p>
                     <a href="/sanpham/NKCKM.html" class="btn btn-primary"><i class='bx bxs-cart'></i> ${product.cost}</a>
                 </div>
             </div></li>`;
 });
-
-// const querySnapshot = await getDocs(products);
-// querySnapshot.forEach((doc) => {
-//   let product = doc.data();
-//   console.log(product);
-//   document.getElementById(
-//     "products"
-//   ).innerHTML += `<li><div>Name: ${product.name}</div><div>Price: ${product.price}</div></li>`;
-// });
