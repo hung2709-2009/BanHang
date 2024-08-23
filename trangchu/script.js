@@ -61,7 +61,7 @@ if (btnRegister) {
         });
         await signOut(auth);
         alert("Please verify your email");
-        location.href = "./login.html";
+        location.href = "../login/index.html";
       })
       .catch((error) => {
         const errorCode = error.code;

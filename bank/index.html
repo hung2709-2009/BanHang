@@ -1,167 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href=".//bank.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href=".//bank.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-    <nav class="navbar bg-body-tertiary ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmYhETUZpFtPLFEXSnCsvw2gpL2ikLlpijOw&usqp=CAU"
-                    alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-                <h1> BANK </h1>
-            </a>
-        </div>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmYhETUZpFtPLFEXSnCsvw2gpL2ikLlpijOw&usqp=CAU"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-top"
+          />
+          <h1>BANK</h1>
+        </a>
+      </div>
     </nav>
 
     <div class="select1">
-        <select class="form-select m-3" aria-label="Default select example">
-            <option selected disabled hidden>Ngân hàng Việt Nam
-
-            </option>
-            <option value="1">Vietcombank</option>
-            <option value="2">BIDV</option>
-            <option value="3">Agribank</option>
-            <option value="4">Techcombank</option>
-            <option value="5">VietinBank</option>
-            <option value="6">VPBank</option>
-            <option value="7">Sacombank</option>
-            <option value="8">HDBank</option>
-            <option value="9">ACB</option>
-            <option value="10">Khác</option>
-        </select>
-        <select class="form-select m-3" aria-label="Default select example">
-            <option selected>Ngân hàng Quốc tế
-            </option>
-            <option value="1">TNHH Indovina</option>
-            <option value="2">Liên doanh Việt Nga </option>
-            <option value="3">SCBVL</option>
-            <option value="4">HLBVN</option>
-            <option value="5">ANZVL</option>
-            <option value="6">Woori</option>
-            <option value="7">Khác</option>
-        </select>
+      <select class="form-select m-3" aria-label="Default select example">
+        <option selected disabled hidden>Ngân hàng Việt Nam</option>
+        <option value="1">Vietcombank</option>
+        <option value="2">BIDV</option>
+        <option value="3">Agribank</option>
+        <option value="4">Techcombank</option>
+        <option value="5">VietinBank</option>
+        <option value="6">VPBank</option>
+        <option value="7">Sacombank</option>
+        <option value="8">HDBank</option>
+        <option value="9">ACB</option>
+        <option value="10">Khác</option>
+      </select>
+      <select class="form-select m-3" aria-label="Default select example">
+        <option selected>Ngân hàng Quốc tế</option>
+        <option value="1">TNHH Indovina</option>
+        <option value="2">Liên doanh Việt Nga</option>
+        <option value="3">SCBVL</option>
+        <option value="4">HLBVN</option>
+        <option value="5">ANZVL</option>
+        <option value="6">Woori</option>
+        <option value="7">Khác</option>
+      </select>
     </div>
 
     <div class="from">
-        <form class="row g-3">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Họ và tên</label>
-                <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-            </div>
-            <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Tên tài khoản ngân hàng của bạn</label>
-                <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-            </div>
-            <div class="col-md-4">
-                <label for="validationDefaultUsername" class="form-label">Gmail </label>
-                <div class="input-group">
-                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                    <input type="text" class="form-control" id="validationDefaultUsername"
-                        aria-describedby="inputGroupPrepend2" required>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationDefault03" class="form-label">Địa chỉ của bạn</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
-            </div>
-            <div class="col-md-3">
-                <label for="validationDefault04" class="form-label">Thành Phố / Tỉnh</label>
-                <select class="form-select" id="validationDefault04" required>
-                    <option selected disabled value="">Việt Nam</option>
-                    <option value="1">An Giang</option>
-                    <option value="2">Bà Rịa-Vũng Tàu</option>
-                    <option value="3">Bạc Liêu</option>
-                    <option value="4">Bắc Giang</option>
-                    <option value="5">Bắc Kạn</option>
-                    <option value="6">Bắc Ninh</option>
-                    <option value="7">Bến Tre</option>
-                    <option value="8">Bình Dương</option>
-                    <option value="9">Bình Định</option>
-                    <option value="10">Bình Phước</option>
-                    <option value="11">Bình Thuận</option>
-                    <option value="12">Cà Mau</option>
-                    <option value="13">Cao Bằng</option>
-                    <option value="14">Cần Thơ</option>
-                    <option value="15">Đà Nẵng</option>
-                    <option value="16">Đắk Lắk</option>
-                    <option value="17">Đắk Nông</option>
-                    <option value="18">Điện Biên</option>
-                    <option value="19">Đồng Nai</option>
-                    <option value="20">Đồng Tháp</option>
-                    <option value="21">Gia Lai</option>
-                    <option value="22">Hà Giang</option>
-                    <option value="23">Hà Nam</option>
-                    <option value="24">Hà Nội</option>
-                    <option value="25">Hà Tĩnh</option>
-                    <option value="26">Hải Dương</option>
-                    <option value="27">Hải Phòng</option>
-                    <option value="28">Hậu Giang</option>
-                    <option value="29">Hòa Bình</option>
-                    <option value="30">Hưng Yên</option>
-                    <option value="31">Khánh Hòa</option>
-                    <option value="32">Kiên Giang</option>
-                    <option value="33">Kon Tum</option>
-                    <option value="34">Lai Châu</option>
-                    <option value="35">Lạng Sơn</option>
-                    <option value="36">Lào Cai</option>
-                    <option value="37">Lâm Đồng</option>
-                    <option value="38">Long An</option>
-                    <option value="39">Nam Định</option>
-                    <option value="40">Nghệ An</option>
-                    <option value="41">Ninh Bình</option>
-                    <option value="42">Ninh Thuận</option>
-                    <option value="43">Phú Thọ</option>
-                    <option value="44">Phú Yên</option>
-                    <option value="45">Quảng Bình</option>
-                    <option value="46">Quảng Nam</option>
-                    <option value="47">Quảng Ngãi</option>
-                    <option value="48">Quảng Ninh</option>
-                    <option value="49">Quảng Trị</option>
-                    <option value="50">Sóc Trăng</option>
-                    <option value="51">Sơn La</option>
-                    <option value="52">Tây Ninh</option>
-                    <option value="53">Thái Bình</option>
-                    <option value="54">Thái Nguyên</option>
-                    <option value="55">Thanh Hóa</option>
-                    <option value="56">Thừa Thiên Huế</option>
-                    <option value="57">Tiền Giang</option>
-                    <option value="58">TP Hồ Chí Minh</option>
-                    <option value="59">Trà Vinh</option>
-                    <option value="60">Tuyên Quang</option>
-                    <option value="61">Vĩnh Long</option>
-                    <option value="62">Vĩnh Phúc</option>
-                    <option value="63">Yên Bái</option>
-                </select>
-            </div>
-            <div class="col-md-3">
-                <label for="validationDefault05" class="form-label">Số Điện thoại</label>
-                <input type="number" class="form-control" id="validationDefault05" required>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                    <label class="form-check-label" for="invalidCheck2">
-                        Đó là bạn?
-                    </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button href="..//trangchu/index.html" class="btn btn-primary" type="submit">Hoàn thành</button>
-            </div>
-        </form>
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Họ và tên</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault01"
+            value="Mark"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label"
+            >Tên tài khoản ngân hàng của bạn</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault02"
+            value="Otto"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label"
+            >Gmail
+          </label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefaultUsername"
+              aria-describedby="inputGroupPrepend2"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label"
+            >Địa chỉ của bạn</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault03"
+            required
+          />
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label"
+            >Thành Phố / Tỉnh</label
+          >
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Việt Nam</option>
+            <option value="1">An Giang</option>
+            <option value="2">Bà Rịa-Vũng Tàu</option>
+            <option value="3">Bạc Liêu</option>
+            <option value="4">Bắc Giang</option>
+            <option value="5">Bắc Kạn</option>
+            <option value="6">Bắc Ninh</option>
+            <option value="7">Bến Tre</option>
+            <option value="8">Bình Dương</option>
+            <option value="9">Bình Định</option>
+            <option value="10">Bình Phước</option>
+            <option value="11">Bình Thuận</option>
+            <option value="12">Cà Mau</option>
+            <option value="13">Cao Bằng</option>
+            <option value="14">Cần Thơ</option>
+            <option value="15">Đà Nẵng</option>
+            <option value="16">Đắk Lắk</option>
+            <option value="17">Đắk Nông</option>
+            <option value="18">Điện Biên</option>
+            <option value="19">Đồng Nai</option>
+            <option value="20">Đồng Tháp</option>
+            <option value="21">Gia Lai</option>
+            <option value="22">Hà Giang</option>
+            <option value="23">Hà Nam</option>
+            <option value="24">Hà Nội</option>
+            <option value="25">Hà Tĩnh</option>
+            <option value="26">Hải Dương</option>
+            <option value="27">Hải Phòng</option>
+            <option value="28">Hậu Giang</option>
+            <option value="29">Hòa Bình</option>
+            <option value="30">Hưng Yên</option>
+            <option value="31">Khánh Hòa</option>
+            <option value="32">Kiên Giang</option>
+            <option value="33">Kon Tum</option>
+            <option value="34">Lai Châu</option>
+            <option value="35">Lạng Sơn</option>
+            <option value="36">Lào Cai</option>
+            <option value="37">Lâm Đồng</option>
+            <option value="38">Long An</option>
+            <option value="39">Nam Định</option>
+            <option value="40">Nghệ An</option>
+            <option value="41">Ninh Bình</option>
+            <option value="42">Ninh Thuận</option>
+            <option value="43">Phú Thọ</option>
+            <option value="44">Phú Yên</option>
+            <option value="45">Quảng Bình</option>
+            <option value="46">Quảng Nam</option>
+            <option value="47">Quảng Ngãi</option>
+            <option value="48">Quảng Ninh</option>
+            <option value="49">Quảng Trị</option>
+            <option value="50">Sóc Trăng</option>
+            <option value="51">Sơn La</option>
+            <option value="52">Tây Ninh</option>
+            <option value="53">Thái Bình</option>
+            <option value="54">Thái Nguyên</option>
+            <option value="55">Thanh Hóa</option>
+            <option value="56">Thừa Thiên Huế</option>
+            <option value="57">Tiền Giang</option>
+            <option value="58">TP Hồ Chí Minh</option>
+            <option value="59">Trà Vinh</option>
+            <option value="60">Tuyên Quang</option>
+            <option value="61">Vĩnh Long</option>
+            <option value="62">Vĩnh Phúc</option>
+            <option value="63">Yên Bái</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Số lượng</label>
+          <input
+            type="number"
+            class="form-control"
+            id="validationDefault05"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck2"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck2">
+              Đó là bạn?
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button
+            href="..//trangchu/index.html"
+            class="btn btn-primary"
+            type="submit"
+          >
+            Hoàn thành
+          </button>
+        </div>
+      </form>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
